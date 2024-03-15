@@ -257,6 +257,12 @@
   color: "#00ff04"
   meltingPoint: 700.0
   boilingPoint: 1737.0
+  metabolisms:
+    Poison:
+      metabolismRate: 0.25
+      effects:
+      - !type:Glow
+        color: "#00ff04"
 
 - type: reagent
   id: Silicon

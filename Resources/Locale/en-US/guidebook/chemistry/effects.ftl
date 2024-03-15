@@ -1,4 +1,4 @@
-﻿-create-3rd-person =
+-create-3rd-person =
     { $chance ->
         [1] Creates
         *[other] create
@@ -48,6 +48,12 @@ reagent-effect-guidebook-foam-area-reaction-effect =
         [1] Creates
         *[other] create
     } large quantities of smoke
+
+reagent-effect-guidebook-glow =
+    { $chance ->
+        [1] Radiates
+        *[other] radiate
+    } light
 
 reagent-effect-guidebook-satiate-thirst =
     { $chance ->
