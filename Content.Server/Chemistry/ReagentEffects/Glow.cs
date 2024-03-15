@@ -7,7 +7,10 @@ namespace Content.Server.Chemistry.ReagentEffects;
 public sealed partial class Glow : ReagentEffect
 {
     [DataField]
-    public float Radius = 1.125f;
+    public float Radius = 1.175f;
+
+    [DataField]
+    public float Energy = 2.5f;
 
     [DataField(required: true)]
     public Color Color;
@@ -19,7 +22,8 @@ public sealed partial class Glow : ReagentEffect
     {
         var lightSys = args.EntityManager.EntitySysManager.GetEntitySystem<SharedPointLightSystem>();
         lightSys.SetEnabled(args.SolutionEntity, true);
-        lightSys.SetColor(args.SolutionEntity, Color);
         lightSys.SetRadius(args.SolutionEntity, Radius);
+        lightSys.SetEnergy(args.SolutionEntity, Energy);
+        lightSys.SetColor(args.SolutionEntity, Color);
     }
 }
