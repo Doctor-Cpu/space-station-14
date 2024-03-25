@@ -940,7 +940,8 @@ public enum InGameICChatType : byte
 {
     Speak,
     Emote,
-    Whisper
+    Whisper,
+    Species,
 }
 
 /// <summary>

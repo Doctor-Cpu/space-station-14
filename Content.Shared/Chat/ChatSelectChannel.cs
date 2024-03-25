@@ -1,4 +1,4 @@
-﻿namespace Content.Shared.Chat
+namespace Content.Shared.Chat
 {
     /// <summary>
     ///     Chat channels that the player can select in the chat box.
@@ -50,6 +50,11 @@
         ///     Admin chat
         /// </summary>
         Admin = ChatChannel.AdminChat,
+
+        /// <summary>
+        ///     Chat only players of the same species can hear
+        /// </summary>
+        Species = ChatChannel.Species,
 
         Console = ChatChannel.Unspecified
     }

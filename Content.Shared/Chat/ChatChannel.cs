@@ -81,14 +81,19 @@ namespace Content.Shared.Chat
         AdminChat = 1 << 13,
 
         /// <summary>
+        ///     Chat only players of the same species can heard
+        /// </summary>
+        Species = 1 << 14,
+
+        /// <summary>
         ///     Unspecified.
         /// </summary>
-        Unspecified = 1 << 14,
+        Unspecified = 1 << 15,
 
         /// <summary>
         ///     Channels considered to be IC.
         /// </summary>
-        IC = Local | Whisper | Radio | Dead | Emotes | Damage | Visual | Notifications,
+        IC = Local | Whisper | Radio | Dead | Emotes | Damage | Visual | Notifications | Species,
 
         AdminRelated = Admin | AdminAlert | AdminChat,
     }
