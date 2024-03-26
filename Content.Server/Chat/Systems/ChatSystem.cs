@@ -210,6 +210,11 @@ public sealed partial class ChatSystem : SharedChatSystem
             checkRadioPrefix = false;
             message = message[1..];
         }
+        else if (desiredType == InGameICChatType.Species)
+        {
+            // check if sender has a species language set
+            //Console.WriteLine($"Language: "source.Comp.Langauge);
+        }
 
         bool shouldCapitalize = (desiredType != InGameICChatType.Emote);
         bool shouldPunctuate = _configurationManager.GetCVar(CCVars.ChatPunctuation);
