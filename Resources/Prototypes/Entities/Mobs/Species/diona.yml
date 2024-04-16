@@ -86,6 +86,7 @@
     templateId: diona
   - type: Speech
     speechVerb: Plant
+    language : Plant
   - type: Vocal
     sounds:
       Male: UnisexDiona

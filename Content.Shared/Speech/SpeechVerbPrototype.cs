@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Prototypes;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Speech;
 
@@ -43,4 +43,7 @@ public sealed partial class SpeechVerbPrototype : IPrototype
     /// </summary>
     [DataField("priority")]
     public int Priority = 0;
+
+    [DataField("language")]
+    public string Language = string.Empty;
 }

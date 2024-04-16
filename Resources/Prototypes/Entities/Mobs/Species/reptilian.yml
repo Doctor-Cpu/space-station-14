@@ -28,6 +28,7 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
+    language: Reptilian
   - type: TypingIndicator
     proto: lizard
   - type: Vocal

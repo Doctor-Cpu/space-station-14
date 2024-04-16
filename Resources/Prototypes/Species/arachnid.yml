@@ -13,7 +13,6 @@
   lastNames: names_arachnid_last
   sexes:
   - Unsexed
-  language: arachnid
 
 - type: speciesBaseSprites
   id: MobArachnidSprites

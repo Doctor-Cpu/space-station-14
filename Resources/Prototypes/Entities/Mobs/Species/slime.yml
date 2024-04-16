@@ -17,6 +17,7 @@
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime
+    language: Slime
   - type: TypingIndicator
     proto: slime
   - type: Vocal

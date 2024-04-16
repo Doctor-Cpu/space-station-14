@@ -12,7 +12,6 @@
   femaleFirstNames: DionaFirst
   lastNames: DionaLast
   naming: TheFirstofLast
-  language: plant
 
 - type: speciesBaseSprites
   id: MobDionaSprites

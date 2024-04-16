@@ -68,6 +68,9 @@ public sealed partial class ChatSystem : SharedChatSystem
     private bool _critLoocEnabled;
     private readonly bool _adminLoocEnabled = true;
 
+    [ValidatePrototypeId<SpeechVerbPrototype>]
+    public const string DefaultLanguage = "";
+
     public override void Initialize()
     {
         base.Initialize();
@@ -213,7 +216,9 @@ public sealed partial class ChatSystem : SharedChatSystem
         else if (desiredType == InGameICChatType.Species)
         {
             // check if sender has a species language set
-            //Console.WriteLine($"Language: "source.Comp.Langauge);
+            var sourceID = source.Id.ToString();
+            var languageProto = _prototypeManager.Index<SpeechVerbPrototype>(DefaultLanguage);
+            Log.Debug($"Language: {languageProto}");
         }
 
         bool shouldCapitalize = (desiredType != InGameICChatType.Emote);
