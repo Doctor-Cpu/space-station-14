@@ -50,6 +50,7 @@ public sealed partial class SpeechVerbPrototype : IPrototype
     [DataField(required: true)]
 
     public LocId Name = string.Empty;
+
     [DataField("language")]
     public string Language = string.Empty;
 }

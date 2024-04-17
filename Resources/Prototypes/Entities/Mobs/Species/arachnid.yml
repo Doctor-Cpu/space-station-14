@@ -62,7 +62,7 @@
   - type: Speech
     speechVerb: Arachnid
     speechSounds: Arachnid
-    language: Arachnid
+    speciesLanguage: Arachnid
   - type: Vocal
     sounds:
       Male: UnisexArachnid

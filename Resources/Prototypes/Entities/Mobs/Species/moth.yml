@@ -22,7 +22,7 @@
     accent: zombieMoth
   - type: Speech
     speechVerb: Moth
-    language: Moth
+    speciesLanguage: Moth
   - type: TypingIndicator
     proto: moth
   - type: Butcherable

@@ -48,5 +48,8 @@ namespace Content.Shared.Speech
         public float SoundCooldownTime { get; set; } = 0.5f;
 
         public TimeSpan LastTimeSoundPlayed = TimeSpan.Zero;
+
+        [DataField]
+        public String SpeciesLanguage = "None";
     }
 }
