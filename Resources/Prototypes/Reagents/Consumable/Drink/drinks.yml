@@ -268,6 +268,21 @@
   physicalDesc: reagent-physical-desc-refreshing
   flavor: soy
   color: "#D2C29D"
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SexChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 50
+      - !type:PopupMessage
+        type: Local
+        messages:
+          - "sexchange-effect-female"
+        conditions:
+        - !type:ReagentThreshold
+          min: 50
+          probability: 0.01
 
 - type: reagent
   id: MilkSpoiled
@@ -277,11 +292,6 @@
   physicalDesc: reagent-physical-desc-putrid
   flavor: terrible
   color: "#faffba"
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: -2
 
 - type: reagent
   id: Nothing
