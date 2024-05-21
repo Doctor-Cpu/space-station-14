@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Doctor-Cpu",
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "states": [
+    {
+        "name": "base"
+    },
+    {
+        "name": "back"
+    },
+    {
+        "name": "pile"
+    },
+    {
+        "name": "diamond"
+    }
+  ]
+}

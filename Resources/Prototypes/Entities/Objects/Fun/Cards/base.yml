@@ -1,0 +1,27 @@
+- type: entity
+  parent: BaseItem
+  id: BaseCard
+  name: playing card
+  description: Card found in a deck of cards.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/cards.rsi
+    state: base
+  - type: Bin
+    whitelist:
+      tags:
+      - Card
+  - type: ContainerContainer
+    containers:
+      bin-container: !type:Container
+  - type: Appearance
+  - type: ItemMapper
+    sprite: Objects/Fun/cards.rsi
+    mapLayers:
+      pile:
+        whitelist:
+          tags:
+          - Card
+  - type: Tag
+    tags:
+    - Card

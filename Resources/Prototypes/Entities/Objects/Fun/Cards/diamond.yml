@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseCard
+  id: CardDiamondAce
+  name: playing card
+  description: Ace of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: diamond
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        diamond: '#1861D5FF'
