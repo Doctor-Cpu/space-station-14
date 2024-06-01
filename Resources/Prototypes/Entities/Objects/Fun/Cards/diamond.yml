@@ -8,8 +8,152 @@
     layers:
     - state: base
     - state: diamond
+          #      map: ["enum.CardVisualLayers.Base"]
+    #  - type: RandomSprite
+      #    selected:
+#      - enum.CardVisualLayers.Base:
+#          diamond: "#FF0000"
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondTwo
+  name: playing card
+  description: Two of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 2
       map: ["enum.DamageStateVisualLayers.Base"]
   - type: RandomSprite
     selected:
       enum.DamageStateVisualLayers.Base:
-        diamond: '#1861D5FF'
+        2: #ff0000
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondThree
+  name: playing card
+  description: Three of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 3
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        3: #ff0000
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondFour
+  name: playing card
+  description: Four of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 4
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        4: #ff0000
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondFive
+  name: playing card
+  description: Five of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 5
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        5: #ff0000
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondSix
+  name: playing card
+  description: Six of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 6
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        6: #ff0000
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondSeven
+  name: playing card
+  description: Seven of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 7
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        7: #ff0000
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondEight
+  name: playing card
+  description: Eight of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 8
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        8: #ff0000
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondNine
+  name: playing card
+  description: Nine of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 9
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        9: #ff0000
+
+- type: entity
+  parent: BaseCard
+  id: CardDiamondTen
+  name: playing card
+  description: Ten of diamonds.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: 10
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: RandomSprite
+    selected:
+      enum.DamageStateVisualLayers.Base:
+        10: #ff0000

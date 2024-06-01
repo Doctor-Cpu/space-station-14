@@ -8,9 +8,12 @@
     sprite: Objects/Fun/cards.rsi
     state: base
   - type: Bin
+    maxItems: 52
     whitelist:
       tags:
       - Card
+  - type: Shuffle
+  - type: Card
   - type: ContainerContainer
     containers:
       bin-container: !type:Container
