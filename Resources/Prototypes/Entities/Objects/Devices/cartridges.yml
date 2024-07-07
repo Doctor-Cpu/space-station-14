@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: NotekeeperCartridge
   name: notekeeper cartridge
@@ -93,3 +93,21 @@
     - type: GuideHelp
       guides:
         - Forensics
+
+- type: entity
+  parent: BaseItem
+  id: BankCartridge
+  name: NT bank cartridge
+  description: A program for sending and recieving spasos
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/cartridge.rsi
+    state: cart-y
+  - type: UIFragment
+    ui: !type:BankUi
+  - type: Cartridge
+    programName: bank-program-name
+    icon:
+      sprite:  Objects/Misc/books.rsi
+      state: book_icon
+    #- type: BankCartridge
